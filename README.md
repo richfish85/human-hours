@@ -1,92 +1,36 @@
-# 🕰️ Human Hours
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-**“Time designed for living.”**  
-A dynamic, data-driven PSA platform exploring the cost of overwork—and the alternatives that heal us.
+## Getting Started
 
-## 🌐 About
+First, run the development server:
 
-Human Hours is a public-facing resource hub that tracks the cultural, economic, and psychological impact of overwork (karoshi), while advocating for sustainable and human-centered working lives.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-We blend fresh statistical updates, policy news, and personal stories with practical tools for balance and recovery—without jargon, without paywalls, and without moralizing.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🎯 Mission
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-To provide a living platform that:
-- Updates dynamically with new karoshi statistics, case studies, and news
-- Offers accessible mental health and work-life resources
-- Shares actionable, non-performative habits for sustainable productivity
-- Undercuts corporate wellness fluff with data-backed, worker-first design
+## Learn More
 
----
+To learn more about Next.js, take a look at the following resources:
 
-## 📦 Tech Stack
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-| Tool | Purpose |
-|------|---------|
-| **Next.js 15 (App Router)** | React framework with SSR, ISR, SEO support |
-| **Tailwind CSS v4** | Utility-first styling, responsive and themeable |
-| **TypeScript** | Strongly-typed, maintainable JS |
-| **Vercel** | Hosting + scheduled serverless functions |
-| **Recharts / Nivo** | Dynamic, accessible charts |
-| **Headless CMS (Sanity / Contentlayer)** | Markdown or CMS-fed content updates |
-| **NewsAPI / RSS + ILO/OECD/MHLW APIs** | Real-time news and labour stats feeds |
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## 🧭 Site Architecture
-/
-├── stats/ → auto-refreshing dashboards
-├── news/ → rolling curated headlines (cron-updated)
-├── stories/ → personal testimonies, MDX or CMS-driven
-├── balance/ → habit tools, disconnect templates, micro actions
-├── manifesto/ → 10 principles for sustainable living
-├── resources/ → mental health, legal rights, employer kits
-└── api/cron/ → scheduled updates (data fetch & revalidate)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-
----
-
-## ✍️ Core Principles
-
-1. Life is not an output metric.  
-2. Rest is a right, not a reward.  
-3. Burnout is structural—not personal failure.  
-4. Better work beats more work.  
-5. Mental clarity > productivity hacks.
-
-_Read the full [Manifesto](./app/manifesto/page.tsx)._
-
----
-
-## 📈 Roadmap
-
-- [x] Scaffold site with App Router + Tailwind
-- [ ] Auto-fetch MHLW, ILO, OECD work-related stats
-- [ ] Revalidate stat pages daily (Vercel cron)
-- [ ] Story studio with MDX & open submission
-- [ ] Resource directory (AU/JP/global)
-- [ ] “Manifesto” with shareable micro-actions
-- [ ] News feed via NewsAPI / GoogleNews RSS
-- [ ] Add personal calculator (overtime risk, sleep debt)
-- [ ] Future You self-message feature
-
----
-
-## 🧠 Why “Human Hours”?
-
-Inspired by the Japanese concept of **karoshi (過労死)**—death by overwork—Human Hours explores what it means to be a functional, empathetic, *present* human in a time that often forgets we're more than units of productivity.
-
----
-
-## 🤝 Contribute
-
-Whether you’re a writer, developer, designer, or someone with a story to tell—join the mission.  
-Submit pull requests, open issues, or contact: `staff@deepnet.com.au`
-
----
-
-## 🪧 License
-
-MIT — Public education, not profit.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
