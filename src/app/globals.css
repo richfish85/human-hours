@@ -6,18 +6,18 @@
   }
 
   body {
-    @apply text-base leading-relaxed tracking-wide antialiased;
+    @apply text-base leading-relaxed tracking-wide antialiased bg-background-light text-charcoal;
   }
 
   h1, h2, h3, h4 {
-    @apply font-semibold text-gray-900;
+    @apply font-mono font-semibold text-charcoal;
   }
 
   a {
-    @apply underline underline-offset-4 text-brand hover:text-brand-dark transition-colors;
+    @apply underline underline-offset-4 text-brand-orange hover:text-brand-coral transition-colors;
   }
 
   blockquote {
-    @apply italic border-l-4 pl-4 text-gray-600 border-brand;
+    @apply italic border-l-4 pl-4 text-gray-600 border-brand-orange;
   }
 }
