@@ -20,7 +20,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-20 bg-white/70 backdrop-blur dark:bg-surface.dark/70">
+    <header className="sticky top-0 z-20 bg-surface/70 backdrop-blur dark:bg-surface-dark/70">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Brand */}
         <Link href="/" className="text-2xl font-bold text-brand">
@@ -40,7 +40,7 @@ export default function Navbar() {
         <ul
           className={`flex flex-col gap-6 lg:flex-row lg:static ${
             open
-              ? 'absolute inset-x-0 top-full bg-white dark:bg-surface.dark p-6'
+              ? 'absolute inset-x-0 top-full bg-surface dark:bg-surface-dark p-6'
               : 'hidden lg:flex'
           }`}
         >

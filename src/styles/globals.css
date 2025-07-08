@@ -7,10 +7,15 @@
   --font-mono: var(--font-geist-mono);
 }
 
+:root {
+  --background: #f8f8f8;
+  --foreground: #1a1a1a;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ce3939;
-    --foreground: #ededed;
+    --background: #1a1a1a;
+    --foreground: #f8f8f8;
   }
 }
 

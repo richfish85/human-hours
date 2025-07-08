@@ -5,12 +5,16 @@ module.exports = {
     extend: {
       colors: {
         /* Brand */
-        brand: { DEFAULT: '#0056B3', light: '#5C9BFF' },
+        brand: { DEFAULT: '#007BFF', light: '#60A5FA' },
+
+        /* Accents */
+        'accent-green': '#10B981',
+        'accent-yellow': '#FCD34D',
 
         /* Surfaces */
-        surface: '#FFFFFF',
+        surface: '#F8F8F8',
         'surface-dark': '#1A1A1A',
-        'surface-muted': '#F3F5F7',
+        'surface-muted': '#ECECEC',
         'surface-dark-muted': '#2A2A2A',
 
         /* Borders / text helpers */
