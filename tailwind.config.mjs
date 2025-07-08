@@ -2,24 +2,29 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        brand: {
-          light: '#FF6F3C',
-          DEFAULT: '#FF5E5B',
-          dark: '#C73E3A',
-        },
-        background: {
-          light: '#FCFAF9',
-          dark: '#111111',
-        },
+        'brand-orange': '#FF6F3C',
+        'brand-coral': '#FF5E5B',
+        'background-light': '#FCFAF9',
+        'background-dark': '#111111',
+        charcoal: '#333333',
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        sans: ['var(--font-dm-sans)', 'var(--font-inter)', 'ui-sans-serif', 'system-ui'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'SFMono-Regular'],
+      },
+      keyframes: {
+        breathe: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
+      },
+      animation: {
+        breathe: 'breathe 1s ease-in-out infinite',
       },
     },
   },
